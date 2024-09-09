@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratyaksh - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 41);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(0, 0, 94);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(217, 112, 255);
+            font-size: 1.0rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(237, 213, 255);
+            height: 1.2px;
+            margin: 20px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: -120px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 1.5rem;
+            margin: 70px 0;
+        }
+
+        .rightsection img {
+            margin: 80px -74px;
+            width: 131%;
+
+        }
+
+        .secondsection h1 {
+            max-width: 80vw;
+            margin: auto;
+            font-size: 1.6rem;
+            height: 80vh;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: -350px auto;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 100px;
+        }
+
+        .secondsection .vertical-title {
+            position: relative;
+            top: 66px;
+            width: 150px;
+            left: -7px;
+        }
+
+        .purple {
+            color: rgb(241, 92, 255);
+        }
+
+        .text-gray {
+            margin: 118px;
+            color: gray;
+            font-size: 13px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -9px;
+            left: -11px;
+        }
+
+        .footer{
+            display: flex;
+        }
+
+
+        #element {
+            color: rgb(241, 92, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Pratyaksh's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Pratyaksh</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection">
+                <img align='left' src="image00001.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far...</span>
+            <h1>My Journey</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="white-removebg-preview.png" alt="">
+                    <div class="vertical-title">
+                        Passed 10th with a grade of 90%
+                        (2020-2021)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="white-removebg-preview.png" alt="">
+                    <div class="vertical-title">
+                        Passed 12th with a grade of 90%
+                        (2022-2023)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="white-removebg-preview.png" alt="">
+                    <div class="vertical-title">
+                        Achieved a Guinness World Record Title
+                        (2022-2023)
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="white-removebg-preview.png" alt="">
+                    <div class="vertical-title">
+                        B.tech CSE(AI and Ml) Sophomore
+                        at SRM University
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="white-removebg-preview.png" alt="">
+                    <div class="vertical-title">
+                        Full time Web Developer and Designer
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first"></div>
+            <h3>Pratyaksh's Developer Portfolio</h3>
+            <div class="footer-second"></div>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Graphic Designer.', 'Web Designer.', 'Video Editor.'
+                , 'Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
